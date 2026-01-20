@@ -1,16 +1,12 @@
-# This is a sample Python script.
+class main:
+    pass
+print("Testando o projeto")
 
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from Cliente import Cliente
 
+from Conta import Conta
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
+c1 = Cliente("João","19 99283-5421")
+conta = Conta(c1.nome,6565,0)
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(conta.titular," Número: ", conta.numero, " Saldo: ", conta.saldo)
