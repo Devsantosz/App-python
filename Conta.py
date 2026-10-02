@@ -1,4 +1,5 @@
 class Conta:#Cria conta
+
     #Atriubutos da conta
     def __init__(self, titular, numero, saldo=0):
         #self. representa o proprio objeto
@@ -17,6 +18,7 @@ class Conta:#Cria conta
             print("O saldo não pode ser negativo!")
         else:
             self._saldo = saldo
+
     #verifica se tem saldo e saca o valor
     def saque(self, valor):
         if self.saldo >= valor:
@@ -24,11 +26,13 @@ class Conta:#Cria conta
             print("Saque realizado com sucesso!")
         else:
             print("Saldo insuficiente!")
+
     #Verifica se o valor é maior que 0 e entao deposita
     def depositar(self, valor):
         if valor > 0:
             self.saldo += valor
             print("Depósito realizado com sucesso!")
+
     #Transfere
     def tranferir(self, destino, valor):
         if valor <= 0:
@@ -45,3 +49,6 @@ class Conta:#Cria conta
         print("Cliente:", self._titular)
         print("Número da conta:", self.numero)
         print("Saldo atual:", self.saldo)
+
+    #Proximo objetivo, criar uma area de observacao, como app de banco
+    

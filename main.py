@@ -1,5 +1,7 @@
 from Cliente import Cliente
 from Conta import Conta
+from tkinter import *
+#Tkinter para tela, com objetivo de criar exibicao
 
 class main:
     pass
