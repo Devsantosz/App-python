@@ -1,16 +1,19 @@
-class main:
-    pass
-print("Testando o projeto")
-
 from Cliente import Cliente
-
 from Conta import Conta
 
-c1 = Cliente("João","19 99283-5421")
-conta = Conta(c1.get_nome(),1222)
+class main:
+    pass
 
-conta.depositar(100)
-conta.saque(50)
-conta.extrato()
+c1 = Cliente("João","19 99999-9999")
+conta1 = Conta(c1.get_nome(),0000)
+
+c2 = Cliente("Guilherme","19 88888-8888")
+conta2 = Conta(c2.get_nome(),1111)
+
+conta1.depositar(100)
+conta1.tranferir(conta2, 25)
+conta1.extrato()
+
+conta2.extrato()
 
 
